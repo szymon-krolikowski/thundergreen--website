@@ -125,7 +125,7 @@ html {
 }
 
 .header__clip--1 {
-  background: url("../image/samochody-elektryczne-inowroclaw.webp");
+  background: url("../image/samochody-elektryczne-inowroclaw-m.webp");
   background-size: cover;
   background-position-x: -200px;
   -webkit-clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
@@ -133,14 +133,14 @@ html {
 }
 
 .header__clip--2 {
-  background: url("../image/panele-fotowoltaiczne-inowroclaw.webp");
+  background: url("../image/panele-fotowoltaiczne-inowroclaw-m.webp");
   background-size: cover;
   -webkit-clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
           clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
 }
 
 .header__clip--3 {
-  background: url("../image/pompy-ciepla-inowroclaw.webp");
+  background: url("../image/pompy-ciepla-inowroclaw-m.webp");
   background-size: cover;
   background-position-x: -150px;
   -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
@@ -225,7 +225,24 @@ html {
     height: 100%;
   }
   .header__clip--1 {
+    background: url("../image/samochody-elektryczne-inowroclaw.webp");
+    background-size: cover;
     background-position-x: -100px;
+    -webkit-clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+            clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+  }
+  .header__clip--2 {
+    background: url("../image/panele-fotowoltaiczne-inowroclaw.webp");
+    background-size: cover;
+    -webkit-clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+            clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+  }
+  .header__clip--3 {
+    background: url("../image/pompy-ciepla-inowroclaw.webp");
+    background-size: cover;
+    background-position-x: -150px;
+    -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
   }
   .header__paragraphSubItem {
     font-size: 1.4rem;
