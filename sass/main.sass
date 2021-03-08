@@ -149,5 +149,69 @@ html
     &__span
         padding-right: 10px
 
+.service
+    margin: 50px 20px
+
+    &__secoundArticle
+        width: 100%
+        margin: 50px 0px
+
+    &__informationBox
+        position: absolute
+        bottom: 0
+        width: 100%
+        opacity: 0
+        color: $white
+        background-color: rgba(34, 34, 34, 0.9)
+        padding: 30px 20px
+        transition: opacity 0.5s
+
+    &__firstImageBox
+        position: relative
+        width: 100%
+        height: 70vh
+        border-radius: 5px
+        background-image: url("../image/panele-fotowoltaiczne-inowroclaw-koszty.webp")
+        background-position: center
+        background-size: cover
+        margin-bottom: 20px
+
+        &:hover .service__informationBox
+            opacity: 1
+
+    &__secoundImageBox
+        position: relative
+        width: 100%
+        height: 70vh
+        border-radius: 5px
+        background-image: url("../image/samochod-elektryczny-zoe.webp")
+        background-position: center
+        background-size: cover
+
+        &:hover .service__informationBox
+            opacity: 1
+    
+    &__unorderList
+        list-style-type: none
+        margin: 20px 0px 0px 0px
+
+    &__listElement
+        font-weight: 600
+        margin: 20px 0px
+
+    &__headingTwo
+        margin-bottom: 20px
+
+    &__spanGreenColor
+        padding-right: 10px
+
+    &__link
+        color: $white
+        text-decoration: none
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
 @import "./_medium"
 @import "./_large"
