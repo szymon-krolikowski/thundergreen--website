@@ -34,6 +34,7 @@ html
 
     &__sliderClipBox .header__clip:hover
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+        transition: clip-path 0.5s
 
     &__clip
         position: absolute
@@ -46,7 +47,7 @@ html
         &--1
             background: url("../image/samochody-elektryczne-inowroclaw-m.webp")
             background-size: cover
-            background-position-x: -200px
+            background-position-x: -100px
             clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%)
 
         &--2
@@ -96,6 +97,57 @@ html
 
     &__paragraphNumber
         font-weight: 600
+
+.team
+    margin: 50px 20px
+
+    &__firstArticle,
+    &__SecoundArticle
+        width: 100%
+
+    &__image
+        width: 100%
+
+    &__partnersBox
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin: 40px 0px 0px 0px
+
+    &__accordion
+        font-size: 1.8rem
+
+    &__contentBox
+        position: relative
+        margin: 20px 0px
+
+    &__contentBoxHeader
+        position: relative
+        font-weight: 600
+        padding: 10px 0px
+        cursor: pointer
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
+    &__answerBox
+        position: relative
+        height: 0
+        overflow: hidden
+        overflow-y: hidden
+        transition: height 0.5s, padding 0.5s
+
+    &__contentBox.teamActiveBox .team__answerBox
+        height: 120px
+        padding: 10px 0px 10px 30px
+
+    &__headingTwo
+        margin-top: 40px
+
+    &__span
+        padding-right: 10px
 
 @import "./_medium"
 @import "./_large"

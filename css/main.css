@@ -110,6 +110,10 @@ html {
 .header__sliderClipBox .header__clip:hover {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
 }
 
 .header__clip {
@@ -127,7 +131,7 @@ html {
 .header__clip--1 {
   background: url("../image/samochody-elektryczne-inowroclaw-m.webp");
   background-size: cover;
-  background-position-x: -200px;
+  background-position-x: -100px;
   -webkit-clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
           clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
 }
@@ -193,6 +197,76 @@ html {
   font-weight: 600;
 }
 
+.team {
+  margin: 50px 20px;
+}
+
+.team__firstArticle, .team__SecoundArticle {
+  width: 100%;
+}
+
+.team__image {
+  width: 100%;
+}
+
+.team__partnersBox {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 40px 0px 0px 0px;
+}
+
+.team__accordion {
+  font-size: 1.8rem;
+}
+
+.team__contentBox {
+  position: relative;
+  margin: 20px 0px;
+}
+
+.team__contentBoxHeader {
+  position: relative;
+  font-weight: 600;
+  padding: 10px 0px;
+  cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.team__contentBoxHeader:hover {
+  color: #25c24f;
+}
+
+.team__answerBox {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  overflow-y: hidden;
+  -webkit-transition: height 0.5s, padding 0.5s;
+  transition: height 0.5s, padding 0.5s;
+}
+
+.team__contentBox.teamActiveBox .team__answerBox {
+  height: 120px;
+  padding: 10px 0px 10px 30px;
+}
+
+.team__headingTwo {
+  margin-top: 40px;
+}
+
+.team__span {
+  padding-right: 10px;
+}
+
 @media screen and (min-width: 760px) {
   .header {
     -webkit-box-orient: horizontal;
@@ -250,6 +324,36 @@ html {
   }
   .header__paragraph {
     padding-right: 40px;
+  }
+  .team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .team__firstArticle {
+    width: 50%;
+    padding-right: 30px;
+  }
+  .team__secoundArticle {
+    width: 50%;
+  }
+  .team__partnersBox {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .team__imageLogoBrand {
+    margin: 0px 50px 0px 0px;
+  }
+  .team__contentBox.teamActiveBox .team__answerBox {
+    height: 105px;
+  }
+  .team__headingTwo {
+    margin-top: 0px;
   }
 }
 
@@ -329,6 +433,43 @@ html {
   .header__paragraphSubItem {
     font-size: 1.7rem;
     margin-top: 10px;
+  }
+  .team {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
+  }
+  .team__firstArticle {
+    position: relative;
+    width: 50%;
+    padding-right: 0px;
+  }
+  .team__secoundArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 50px;
+  }
+  .team__firstArticle::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(37, 194, 79, 0.1);
+    z-index: -1;
+  }
+  .team__contentBox.teamActiveBox .team__answerBox {
+    height: 78px;
   }
 }
 /*# sourceMappingURL=main.css.map */
