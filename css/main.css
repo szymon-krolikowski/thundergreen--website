@@ -3,6 +3,7 @@
   color: #222222;
   font-size: 3rem;
   letter-spacing: -1px;
+  margin-bottom: 20px;
 }
 
 .headingTwo {
@@ -17,6 +18,10 @@
 
 .paragraph {
   font-size: 1.7rem;
+}
+
+.smallParagraph {
+  font-size: 1.2rem;
 }
 
 .spanGreenColor {
@@ -40,6 +45,9 @@
   .paragraph {
     font-size: 1.75rem;
   }
+  .smallParagraph {
+    font-size: 1.55rem;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -51,6 +59,9 @@
   }
   .paragraph {
     font-size: 1.85rem;
+  }
+  .smallParagraph {
+    font-size: 1.60rem;
   }
 }
 
@@ -67,5 +78,240 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: 'Quicksand', sans-serif;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 20px 50px;
+}
+
+.header__firstArticle, .header__secoundArticle {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.header__sliderClipBox {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.header__sliderClipBox:hover .header__clip {
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.header__sliderClipBox .header__clip:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.header__clip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+
+.header__clip--1 {
+  background: url("../image/samochody-elektryczne-inowroclaw.webp");
+  background-size: cover;
+  background-position-x: -200px;
+  -webkit-clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+          clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.header__clip--2 {
+  background: url("../image/panele-fotowoltaiczne-inowroclaw.webp");
+  background-size: cover;
+  -webkit-clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+          clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.header__clip--3 {
+  background: url("../image/pompy-ciepla-inowroclaw.webp");
+  background-size: cover;
+  background-position-x: -150px;
+  -webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+          clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.header__clipContent {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 70%;
+  background: rgba(255, 255, 255, 0.918);
+  border-top-right-radius: 5px;
+  opacity: 0;
+  padding: 20px;
+  -webkit-transition: bottom 0.5s, opacity 0.5s;
+  transition: bottom 0.5s, opacity 0.5s;
+}
+
+.header__clip:hover .header__clipContent {
+  bottom: 0%;
+  opacity: 1;
+}
+
+.header__subItemsBox {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.header__headinThree {
+  color: #25c24f;
+  margin-bottom: 10px;
+}
+
+.header__paragraphTop {
+  color: #9c9c9c;
+}
+
+.header__paragraphNumber {
+  color: #25c24f;
+  font-weight: bold;
+}
+
+.header__paragraphSubItem {
+  font-weight: 600;
+  margin: 20px 0px;
+}
+
+.header__paragraphNumber {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 760px) {
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__subItemsBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .header__subItemsElement {
+    width: 33.33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__sliderClipBox {
+    height: 100%;
+  }
+  .header__clip--1 {
+    background-position-x: -100px;
+  }
+  .header__paragraphSubItem {
+    font-size: 1.4rem;
+    margin: 0px 10px 0px 0px;
+  }
+  .header__paragraph {
+    padding-right: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .header {
+    width: 90vw;
+    max-width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0px auto;
+  }
+  .header__firstArticle {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-right: 5rem;
+    margin: 0px;
+  }
+  .header__secoundArticle {
+    width: 60%;
+    margin-top: 50px;
+  }
+  .header__sliderClipBox {
+    height: 600px;
+  }
+  .header__clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-clip-path 0.5s;
+    transition: -webkit-clip-path 0.5s;
+    transition: clip-path 0.5s;
+    transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+  }
+  .header__clip--1 {
+    background: url("../image/samochody-elektryczne-inowroclaw.webp");
+    background-size: none;
+    background-position-x: -100px;
+    background-position-y: -50px;
+  }
+  .header__clip--2 {
+    background: url("../image/panele-fotowoltaiczne-inowroclaw.webp");
+    background-size: cover;
+  }
+  .header__clip--3 {
+    background: url("../image/pompy-ciepla-inowroclaw.webp");
+    background-size: cover;
+  }
+  .header__paragraph {
+    width: 85%;
+  }
+  .header__paragraphNumber {
+    font-size: 1.7rem;
+  }
+  .header__paragraphSubItem {
+    font-size: 1.7rem;
+    margin-top: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

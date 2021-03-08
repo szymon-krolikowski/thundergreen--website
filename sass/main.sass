@@ -14,5 +14,88 @@ html
     scroll-behavior: smooth
     font-family: 'Quicksand', sans-serif
 
+.header
+    display: flex
+    flex-direction: column
+    margin: 0px 20px 50px
+
+    &__firstArticle,
+    &__secoundArticle
+        width: 100%
+        margin-top: 50px
+
+    &__sliderClipBox
+        position: relative
+        width: 100%
+        height: 400px
+
+        &:hover .header__clip
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%)
+
+    &__sliderClipBox .header__clip:hover
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%)
+
+    &__clip
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        transition: clip-path 0.5s
+
+        &--1
+            background: url("../image/samochody-elektryczne-inowroclaw.webp")
+            background-size: cover
+            background-position-x: -200px
+            clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%)
+
+        &--2
+            background: url("../image/panele-fotowoltaiczne-inowroclaw.webp")
+            background-size: cover
+            clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%)
+
+        &--3
+            background: url("../image/pompy-ciepla-inowroclaw.webp")
+            background-size: cover
+            background-position-x: -150px
+            clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%)
+
+    &__clipContent
+        position: absolute
+        bottom: -100%
+        left: 0
+        width: 70%
+        background: rgba(255, 255, 255, 0.918)
+        border-top-right-radius: 5px
+        opacity: 0
+        padding: 20px
+        transition: bottom 0.5s, opacity 0.5s
+
+    &__clip:hover .header__clipContent
+        bottom: 0%
+        opacity: 1
+
+    &__subItemsBox
+        margin-top: 20px
+        margin-left: 20px
+
+    &__headinThree
+        color: $green
+        margin-bottom: 10px
+
+    &__paragraphTop
+        color: $gray
+
+    &__paragraphNumber
+        color: $green
+        font-weight: bold
+
+    &__paragraphSubItem
+        font-weight: 600
+        margin: 20px 0px
+
+    &__paragraphNumber
+        font-weight: 600
+
 @import "./_medium"
 @import "./_large"
