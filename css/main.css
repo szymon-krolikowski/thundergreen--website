@@ -578,7 +578,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-image: url("../image/kobieta-jezioro-gory.png");
+  background-image: url("../image/kobieta-jezioro-gory.webp");
   background-position: center;
   background-size: cover;
   border-radius: 10px;
