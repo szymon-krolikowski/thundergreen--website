@@ -311,19 +311,19 @@ html {
   margin-top: 30px;
 }
 
-.team {
+.changes {
   margin: 50px 20px;
 }
 
-.team__firstArticle, .team__SecoundArticle {
+.changes__firstArticle, .changes__SecoundArticle {
   width: 100%;
 }
 
-.team__image {
+.changes__image {
   width: 100%;
 }
 
-.team__partnersBox {
+.changes__partnersBox {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -337,16 +337,16 @@ html {
   margin: 40px 0px 0px 0px;
 }
 
-.team__accordion {
+.changes__accordion {
   font-size: 1.8rem;
 }
 
-.team__contentBox {
+.changes__contentBox {
   position: relative;
   margin: 20px 0px;
 }
 
-.team__contentBoxHeader {
+.changes__contentBoxHeader {
   position: relative;
   font-weight: 600;
   padding: 10px 0px;
@@ -355,11 +355,11 @@ html {
   transition: color 0.5s;
 }
 
-.team__contentBoxHeader:hover {
+.changes__contentBoxHeader:hover {
   color: #25c24f;
 }
 
-.team__answerBox {
+.changes__answerBox {
   position: relative;
   height: 0;
   overflow: hidden;
@@ -368,16 +368,16 @@ html {
   transition: height 0.5s, padding 0.5s;
 }
 
-.team__contentBox.teamActiveBox .team__answerBox {
+.changes__contentBox.changesActiveBox .changes__answerBox {
   height: 120px;
   padding: 10px 0px 10px 30px;
 }
 
-.team__headingTwo {
+.changes__headingTwo {
   margin-top: 40px;
 }
 
-.team__span {
+.changes__span {
   padding-right: 10px;
 }
 
@@ -1023,7 +1023,7 @@ html {
   .header__paragraph {
     padding-right: 40px;
   }
-  .team {
+  .changes {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1032,25 +1032,25 @@ html {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .team__firstArticle {
+  .changes__firstArticle {
     width: 50%;
     padding-right: 30px;
   }
-  .team__secoundArticle {
+  .changes__secoundArticle {
     width: 50%;
   }
-  .team__partnersBox {
+  .changes__partnersBox {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .team__imageLogoBrand {
+  .changes__imageLogoBrand {
     margin: 0px 50px 0px 0px;
   }
-  .team__contentBox.teamActiveBox .team__answerBox {
+  .changes__contentBox.changesActiveBox .changes__answerBox {
     height: 105px;
   }
-  .team__headingTwo {
+  .changes__headingTwo {
     margin-top: 0px;
   }
   .service__secoundArticle {
@@ -1308,17 +1308,17 @@ html {
     font-size: 1.7rem;
     margin-top: 10px;
   }
-  .team {
+  .changes {
     width: 90vw;
     max-width: 1300px;
     margin: 100px auto;
   }
-  .team__firstArticle {
+  .changes__firstArticle {
     position: relative;
     width: 50%;
     padding-right: 0px;
   }
-  .team__secoundArticle {
+  .changes__secoundArticle {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1332,7 +1332,7 @@ html {
             justify-content: center;
     padding-left: 50px;
   }
-  .team__firstArticle::after {
+  .changes__firstArticle::after {
     content: "";
     position: absolute;
     top: -5%;
@@ -1342,7 +1342,7 @@ html {
     background-color: rgba(37, 194, 79, 0.1);
     z-index: -1;
   }
-  .team__contentBox.teamActiveBox .team__answerBox {
+  .changes__contentBox.changesActiveBox .changes__answerBox {
     height: 78px;
   }
   .service {
