@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import "./_topography"
+
+*,
+::after,
+::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+    font-family: 'Quicksand', sans-serif
+
+.navigation
+    height: 80px
+    display: flex
+    align-content: center
+    align-items: center
+    padding: 0px 20px
+
+    &__secoundArticle
+        display: none
+
+.navigationMobile
+    position: fixed
+    top: 0
+    width: 80vw
+    height: 100vh
+    background-color: white
+    transform: translateX(90vw)
+    box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5)
+    margin-left: 10vw
+    transition: transform 0.5s
+    z-index: 1000
+    
+    &__firstArticle
+        display: flex
+        flex-direction: column
+        margin-top: 10px
+        
+    &__button
+        position: fixed
+        top: 20px
+        right: 20px
+        width: 35px
+        height: 35px
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        color: $white
+        font-size: 30px
+        background-color: $green
+        border-radius: 5px
+        transition: transform 0.5s
+        z-index: 1000
+    
+    &__link
+        font-weight: 600
+        text-decoration: none
+        color: $black
+        padding: 20px
+        margin: 0 15px
+        transition: color 0.5s
+
+.navigationMobileActive
+    transform: translateX(10vw)
+
+.navigationMobileButtonActive
+    transform: translateX(-78vw)
+
+@import "./_mediumFotowoltaika"
+@import "./_largeFotowoltaika"
