@@ -4,3 +4,55 @@
         max-width: 1300px
         margin: 0px auto
         padding: 0px 0px
+
+    .header
+        width: 90vw
+        max-width: 1300px
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        margin: 0px auto
+        
+        &__firstArticle
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: start
+            padding-right: 5rem
+            margin: 0px
+
+        &__secoundArticle
+            width: 60%
+            margin-top: 50px
+
+        &__paragraph
+            width: 85%
+
+    .changes
+        width: 90vw
+        max-width: 1300px
+        margin: 100px auto
+
+        &__firstArticle
+            position: relative
+            width: 50% 
+            padding-right: 0px
+
+        &__secoundArticle
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding-left: 50px
+
+        &__firstArticle::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 80%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
