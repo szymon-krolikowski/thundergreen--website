@@ -704,6 +704,86 @@ html {
   text-decoration: none;
 }
 
+.contact {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../image/contact-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.contact__input {
+  position: relative;
+  width: 70vw;
+  font-size: 1.5rem;
+  border: 1px solid #9c9c9c;
+  border-radius: 20px;
+  padding: 10px 20px;
+  -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+          box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+  margin: 40px 0px 20px;
+  outline: none;
+}
+
+.contact__input::-webkit-input-placeholder, .contact__input::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.contact__input::-webkit-input-placeholder, .contact__input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+}
+
+.contact__button {
+  position: relative;
+  width: 70vw;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  border: 1px solid #25c24f;
+  background-color: #25c24f;
+  padding: 10px 20px;
+  -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+          box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.1);
+  cursor: pointer;
+  -webkit-transition: background-color 0.5s, border 0.5s;
+  transition: background-color 0.5s, border 0.5s;
+}
+
+.contact__button:hover {
+  border: 1px solid #222222;
+  background-color: #222222;
+}
+
+.contact__headingTwo {
+  text-align: center;
+  margin: 0px 20px;
+}
+
+.field-error {
+  border: 1px solid red !important;
+}
+
+.field-accept {
+  border: 1px solid #25c24f !important;
+}
+
 .footer {
   color: white;
   background-color: #3D3D3D;
@@ -964,6 +1044,12 @@ html {
   }
   .blog__headingTwo {
     padding-left: 20px;
+  }
+  .contact {
+    height: 40vh;
+  }
+  .contact__button {
+    width: 40vw;
   }
   .footer {
     color: white;
@@ -1232,6 +1318,14 @@ html {
   }
   .blog__headingTwo {
     padding-left: 5%;
+  }
+  .contact__input {
+    width: 30vw;
+    padding: 20px 30px;
+  }
+  .contact__button {
+    width: 30vw;
+    padding: 20px 30px;
   }
   .footer__firstArticle {
     max-width: 1300px;
