@@ -190,6 +190,58 @@ html {
           transform: translateX(-78vw);
 }
 
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 20px 50px;
+}
+
+.header__firstArticle, .header__secoundArticle {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.header__image {
+  width: 100%;
+}
+
+.header__paragraphTop {
+  color: #9c9c9c;
+}
+
+.header__linkBox {
+  margin-top: 30px;
+}
+
+.changes {
+  margin: 50px 20px;
+}
+
+.changes__firstArticle, .changes__SecoundArticle {
+  width: 100%;
+}
+
+.changes__image {
+  width: 100%;
+}
+
+.changes__headingTwo {
+  margin-top: 40px;
+}
+
+.changes__paragraph {
+  margin-top: 20px;
+}
+
+.changes__span {
+  padding-right: 10px;
+}
+
 @media screen and (min-width: 760px) {
   .navigation {
     -webkit-box-pack: justify;
@@ -218,6 +270,34 @@ html {
   .navigationMobile__button {
     display: none;
   }
+  .header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__paragraph {
+    padding-right: 40px;
+  }
+  .changes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .changes__firstArticle {
+    width: 50%;
+    padding-right: 30px;
+  }
+  .changes__secoundArticle {
+    width: 50%;
+  }
+  .changes__headingTwo {
+    margin-top: 0px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -226,6 +306,81 @@ html {
     max-width: 1300px;
     margin: 0px auto;
     padding: 0px 0px;
+  }
+  .header {
+    width: 90vw;
+    max-width: 1300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: 0px auto;
+  }
+  .header__firstArticle {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    padding-right: 5rem;
+    margin: 0px;
+  }
+  .header__secoundArticle {
+    width: 60%;
+    margin-top: 50px;
+  }
+  .header__paragraph {
+    width: 85%;
+  }
+  .changes {
+    width: 90vw;
+    max-width: 1300px;
+    margin: 100px auto;
+  }
+  .changes__firstArticle {
+    position: relative;
+    width: 50%;
+    padding-right: 0px;
+  }
+  .changes__secoundArticle {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-left: 50px;
+  }
+  .changes__firstArticle::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 80%;
+    height: 90%;
+    background-color: rgba(37, 194, 79, 0.1);
+    z-index: -1;
   }
 }
 /*# sourceMappingURL=fotowoltaika.css.map */
