@@ -110,6 +110,37 @@ html
     &__span
         padding-right: 10px
 
+.steps
+    background-color: rgba(37, 194, 79, 0.1)
+
+    &__wrapper
+        width: 100vw
+        background-color: rgba(37, 194, 79, 0.1)
+
+    &__firstArticle
+        padding: 50px 20px
+
+    &__stepBox
+        position: relative
+
+        &--2
+            margin: 30px 0px
+
+    &__stepBox:hover .steps__headingThree
+        color: $green
+
+    &__headingThree
+        transition: color 0.5s
+        margin: 10px 0px
+
+    &__paragraphNumber
+        position: absolute
+        font-size: 8rem
+        font-weight: bold
+        color: rgba(0,0,0,0.1)
+
+
+
 .footer
     color: $white
     background-color: #3D3D3D
