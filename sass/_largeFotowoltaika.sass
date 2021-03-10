@@ -79,7 +79,53 @@
 
         &__paragraphNumber
             font-size: 10rem
+
+    .product
+        max-width: 1300px
+        margin: 100px auto
+
+        &__firstArticle
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+            &--risen
+                order: 5
+
+        &__secoundArticle--risen
+            order: 1
+
+        &__image
+            position: relative
+            width: 55%
             
+        &__boxImage
+            position: relative
+            display: flex
+            justify-content: flex-end
+
+            &--secound
+                justify-content: flex-start
+
+        &__boxImage--secound::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 50%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+        &__boxImage--first::after
+            content: ""
+            position: absolute
+            top: -5%
+            right: -5%
+            width: 50%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
 
     .footer
         
