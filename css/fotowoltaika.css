@@ -512,10 +512,6 @@ html {
   padding-right: 30px;
 }
 
-.calculator__inputRange {
-  width: 90%;
-}
-
 .calculator__paragraphTop {
   margin: 20px 0px;
 }
@@ -526,123 +522,23 @@ html {
   margin: 40px;
 }
 
-.container {
-  max-width: 90vw;
-  overflow: hidden;
-}
-
-.box-minmax {
-  margin-top: 30px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  font-weight: bold;
-  color: #222222;
-}
-
-.box-minmax span:first-child {
-  margin-left: 10px;
-}
-
-.rs-range {
-  margin-top: 29px;
-  width: 100%;
-  -webkit-appearance: none;
-}
-
-.rs-range:focus {
+.calculator__input {
+  position: relative;
+  font-size: 1.5rem;
+  border: 1px solid #9c9c9c;
+  border-radius: 20px;
+  padding: 10px 20px;
   outline: none;
 }
 
-.rs-range::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  background: linear-gradient(80deg, transparent, #25c24f);
-  border-radius: 50px;
-  border: 0px solid #010101;
+.calculator__input::-webkit-input-placeholder, .calculator__input::-webkit-input-placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
-.rs-range::-moz-range-track {
-  width: 100%;
-  height: 5px;
-  cursor: pointer;
-  box-shadow: none;
-  background: linear-gradient(80deg, transparent, #25c24f);
-  border-radius: 50px;
-  border: 0px solid #010101;
-}
-
-.rs-range::-webkit-slider-thumb {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border: 0px solid #25c24f;
-  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  height: 42px;
-  width: 22px;
-  border-radius: 22px;
-  background: #25c24f;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -20px;
-}
-
-.rs-range::-moz-range-thumb {
-  box-shadow: none;
-  border: 0px solid #25c24f;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
-  height: 42px;
-  width: 22px;
-  border-radius: 22px;
-  background: #25c24f;
-  cursor: pointer;
-  -webkit-appearance: none;
-  margin-top: -20px;
-}
-
-.rs-range::-moz-focus-outer {
-  border: 0;
-}
-
-.rs-label {
-  position: relative;
-  -webkit-transform-origin: center center;
-          transform-origin: center center;
-  display: block;
-  width: 98px;
-  height: 98px;
-  background: transparent;
-  border-radius: 50%;
-  line-height: 30px;
-  text-align: center;
-  font-weight: bold;
-  padding-top: 22px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 2px solid #25c24f;
-  margin-top: 20px;
-  margin-left: -38px;
-  left: attr(value);
-  color: #222222;
-  font-style: normal;
-  font-weight: normal;
-  line-height: normal;
-  font-size: 36px;
-}
-
-.rs-label::after {
-  content: "zł";
-  display: block;
-  font-size: 20px;
-  letter-spacing: 0.07em;
-  margin-top: -2px;
+.calculator__input::-webkit-input-placeholder, .calculator__input::placeholder {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
 }
 
 .footer {

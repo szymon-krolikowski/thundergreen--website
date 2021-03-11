@@ -1,23 +1,4 @@
-var rangeSlider = document.getElementById("rs-range-line");
-var rangeBullet = document.getElementById("rs-bullet");
-var rs = document.querySelector(".rs-label")
-
-rangeSlider.addEventListener("input", showSliderValue, false);
-
-function showSliderValue() {
-  if(rangeSlider.value > 500) {
-    rs.style.color = "rgb(248, 0, 0)"
-  } else {
-    rs.style.color = "rgb(37, 194, 79)"
-  }
-  rangeBullet.innerHTML = rangeSlider.value;
-  var bulletPosition = (rangeSlider.value /rangeSlider.max);
-  rangeBullet.style.left = (bulletPosition * 578) + "px";
-}
-
-
-
-let inputRange = document.getElementById("rs-range-line");
+let inputRange = document.querySelector(".calculator__input");
 let spanInstallationSize = document.querySelector(".js-installationSize");
 let spanAnnualProduction = document.querySelector(".js-annualProduction");
 let spanInstallationCost = document.querySelector(".js-installationCost");
