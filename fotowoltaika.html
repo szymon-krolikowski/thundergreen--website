@@ -61,6 +61,91 @@
         </article>
     </section>
 
+    <section class="calculator">
+        <article class="calculator__firstArticle">
+            <h2 class="headingTwo">Kalkulator <span class="spanGreenColor">zwrotu</span> inwestycji</h2>
+            <p class="paragraph calculator__paragraphTop">Miesięczny rachunek za prąd</p>
+           
+  
+            <div class="container"><div class="range-slider">
+                <span id="rs-bullet" class="rs-label">0</span>
+                <input id="rs-range-line" class="rs-range" type="range" value="0" min="0" max="1500">
+                
+              </div>
+              
+              <div class="box-minmax">
+                <span class="paragraph">100 zł</span><span class="paragraph spanRedColor">1500 zł</span>
+              </div></div>
+              <p style="opacity:0" class="paragraph spanGreenColor js-youSave">52 322zł</p>
+                   
+            
+        </article>
+
+        <article class="calculator__secoundArticle">
+            
+            <div class="calculator__rowBox">
+                <div class="calculator__box calculator__box--reverse">
+                    <div class="calculator__iconBox calculator__iconBox--reverse">
+                        <img width="74" src="/image/icon-solarPanel.png" alt="Ikonka paneli słonecznych">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">Wielkość instalacji</p>
+                        <p class="paragraph spanGreenColor js-installationSize">5.67kWp</p>
+                    </div>
+                </div>
+                <div class="calculator__box">
+                    <div class="calculator__iconBox">
+                        <img width="74" src="/image/icon-bulb.png" alt="Ikonka żarówki">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">W ciągu roku wyprodukujesz</p>
+                        <p class="paragraph spanGreenColor js-annualProduction">5 443 kWh</p>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__rowBox">
+                <div class="calculator__box calculator__box--reverse">
+                    <div class="calculator__iconBox calculator__iconBox--reverse">
+                        <img width="74" src="/image/icon-calculator.png" alt="Ikonka kalkulatora">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">Koszt instalacji</p>
+                        <p class="paragraph spanGreenColor js-installationCost">20100 zł</p>
+                    </div>
+                </div>
+                <div class="calculator__box">
+                    <div class="calculator__iconBox">
+                        <img width="74" src="/image/icon-solarMoney.png" alt="Ikonka słońca">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">lub od <span class="spanGreenColor js-installationCostWithDotation">22 868zł</span></p>
+                        <p class="paragraph">z dotacją <span class="spanGreenColor">"Mój prąd"</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="calculator__rowBox">
+                <div class="calculator__box calculator__box--reverse">
+                    <div class="calculator__iconBox calculator__iconBox--reverse">
+                        <img width="74" src="/image/icon-house.png" alt="Ikonka domu z panelami fotowoltaicznymi">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">Roczny rachunek z fotowoltaiką</p>
+                        <p class="paragraph spanGreenColor js-annualBillWithInstallation">200 zł</p>
+                    </div>
+                </div>
+                <div class="calculator__box">
+                    <div class="calculator__iconBox">
+                        <img width="74" src="/image/icon-piggyBank.png" alt="Ikonka skarbonki">
+                    </div>
+                    <div class="calculator__textBox">
+                        <p class="paragraph">Oszczędności przez 25 lat</p>
+                        <p class="paragraph spanGreenColor js-annualBill">52 322zł</p>
+                    </div>
+                </div>     
+            </div>
+        </article>
+    </section>
+
     <section class="steps">
         <article class="steps__firstArticle">
             <div class="steps__stepBox">
@@ -212,5 +297,6 @@
         </article>
     </footer>
     <script src="js/accordion.js"></script>
+    <script src="js/calculator.js"></script>
 </body>
 </html>
