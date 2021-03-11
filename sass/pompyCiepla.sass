@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+@import "./_topography"
+
+*,
+::after,
+::before
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+    font-family: 'Quicksand', sans-serif
+
+.navigation
+    height: 80px
+    display: flex
+    align-content: center
+    align-items: center
+    padding: 0px 20px
+
+    &__secoundArticle
+        display: none
+
+.navigationMobile
+    position: fixed
+    top: 0
+    width: 80vw
+    height: 100vh
+    background-color: white
+    transform: translateX(90vw)
+    box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5)
+    margin-left: 10vw
+    transition: transform 0.5s
+    z-index: 1000
+    
+    &__firstArticle
+        display: flex
+        flex-direction: column
+        margin-top: 10px
+        
+    &__button
+        position: fixed
+        top: 20px
+        right: 20px
+        width: 35px
+        height: 35px
+        display: flex
+        justify-content: center
+        align-content: center
+        align-items: center
+        color: $white
+        font-size: 30px
+        background-color: $green
+        border-radius: 5px
+        transition: transform 0.5s
+        z-index: 1000
+    
+    &__link
+        font-weight: 600
+        text-decoration: none
+        color: $black
+        padding: 20px
+        margin: 0 15px
+        transition: color 0.5s
+
+.navigationMobileActive
+    transform: translateX(10vw)
+
+.navigationMobileButtonActive
+    transform: translateX(-78vw)
+
+.header
+    display: flex
+    flex-direction: column
+    margin: 0px 20px 50px
+
+    &__firstArticle,
+    &__secoundArticle
+        width: 100%
+        margin-top: 50px
+
+    &__image
+        width: 100%
+
+    &__paragraphTop
+        color: $gray
+
+    &__linkBox
+        margin-top: 30px
+
+.changes
+    margin: 50px 20px
+
+    &__firstArticle,
+    &__SecoundArticle
+        width: 100%
+
+    &__image
+        width: 100%
+
+    &__headingTwo
+        margin-top: 40px
+
+    &__paragraph
+        margin-top: 20px
+
+    &__span
+        padding-right: 10px
+
+.steps
+    background-color: rgba(37, 194, 79, 0.1)
+
+    &__wrapper
+        width: 100vw
+        background-color: rgba(37, 194, 79, 0.1)
+
+    &__firstArticle
+        padding: 50px 20px
+
+    &__stepBox
+        position: relative
+
+        &--2
+            margin: 30px 0px
+
+    &__stepBox:hover .steps__headingThree
+        color: $green
+
+    &__headingThree
+        transition: color 0.5s
+        margin: 10px 0px
+
+    &__paragraphNumber
+        position: absolute
+        font-size: 8rem
+        font-weight: bold
+        color: rgba(0,0,0,0.1)
+
+.product
+    margin: 50px 20px
+
+    &__secoundArticle
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+
+    &__boxImage
+        position: relative
+        width: 100%
+        display: flex
+        justify-content: center
+            
+    &__image
+        width: 70%
+
+    &__unorderList
+        list-style: none
+        line-height: 3rem
+        margin: 40px 0px
+
+    &__listElement
+        display: flex
+        font-weight: 600
+
+    &__headingTwo
+        margin-bottom: 20px
+
+    &__spanGreenColor
+        padding-right: 10px
+        font-weight: bold
+
+.faq
+    margin: 50px 20px
+
+    &__firstArticle,
+    &__SecoundArticle
+        width: 100%
+
+    &__firstArticle
+        display: none
+
+    &__image
+        width: 100%
+
+    &__partnersBox
+        width: 100%
+        display: flex
+        flex-direction: row
+        justify-content: space-around
+        margin: 40px 0px 0px 0px
+
+    &__accordion
+        font-size: 1.8rem
+
+    &__contentBox
+        position: relative
+        margin: 20px 0px
+
+    &__contentBoxHeader
+        position: relative
+        font-weight: 600
+        padding: 10px 0px
+        cursor: pointer
+        transition: color 0.5s
+        display: flex
+
+        &:hover
+            color: $green
+
+    &__answerBox
+        position: relative
+        height: 0
+        overflow: hidden
+        overflow-y: hidden
+        transition: height 0.5s, padding 0.5s
+
+    &__contentBox.faqActiveBox .faq__answerBox
+        height: 100%
+        padding: 10px 0px 10px 30px
+
+    &__headingTwo
+        margin-top: 40px
+
+    &__span
+        padding-right: 10px
+
+.blog
+    margin: 50px 20px
+
+    &__firstSection
+        width: 100%
+
+    &__largeImageBox
+        position: relative
+        width: 100%
+        height: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        background-image: url("../image/kobieta-jezioro-gory.webp")
+        background-position: center
+        background-size: cover
+        border-radius: 10px
+
+    &__largeTextBox
+        position: absolute
+        padding: 0px 30px
+
+    &__container 
+        width: 100%
+
+    &__controls
+        margin-top: 20px
+
+    &__carousel 
+        position: relative
+        width: 100%
+        height: 100%
+        display: flex
+        justify-content: flex-start
+        overflow: hidden
+
+    &__slider 
+        width: 500%
+        height: 100%
+        display: flex
+        flex-shrink: 0
+        transition: all 0.5s
+
+    &__slide
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        flex-basis: 20%
+        flex-shrink: 0
+        font-size: 20px
+
+    &__image
+        width: 100%
+        border-radius: 5px
+        cursor: pointer
+
+    &__nextButton,
+    &__prevButton 
+        background: none
+        border: 1px solid black
+        border-radius: 50%
+        cursor: pointer
+        outline: none
+        transition: border 0.3s, color 0.3s
+
+        &:hover
+            border: 1px solid $green
+            color: $green
+
+    &__prevButton
+        margin-right: 20px
+
+    &__headingTwo
+        margin: 40px 0px
+
+        &--white
+            color: $white
+
+    &__headingThree
+        margin: 20px 0px
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
+    &__link
+        margin-top: 30px
+
+    &__paragraph
+        color: $white
+        margin: 20px 0px
+
+    &__icon
+        font-size: 30px
+
+    &__link
+        text-decoration: none
+
+.calculator
+    margin: 50px 20px
+    text-align: center
+
+    &__box
+        display: flex
+        align-content: center
+        align-items: center
+        text-align: left
+        margin: 30px 0px
+        font-weight: bold
+
+    &__iconBox
+        padding-right: 30px
+
+    &__paragraphTop
+        margin: 20px 0px
+
+    &__paragraphMain
+        font-size: 2rem
+        font-weight: bold
+        margin: 40px
+
+    &__input
+        position: relative
+        font-size: 1.5rem
+        border: 1px solid $gray
+        border-radius: 20px
+        padding: 10px 20px
+        outline: none
+
+    &__input::-webkit-input-placeholder,
+    &__input::placeholder
+        font-family: 'Quicksand', sans-serif
+        font-weight: 400
+
+.formContact
+    display: flex
+    flex-direction: column
+    margin: 50px 0px 0px
+
+    &__firstArticle
+        margin: 50px 20px
+
+    &__dataContactBox
+        display: flex
+        margin: 20px 0px
+
+    &__secoundArticle
+        width: 100vw
+        padding: 50px 20px
+        background-color: rgba(37, 194, 79, 0.1)
+
+    &__form
+        width: 90%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: flex-start
+        font-weight: 300
+        margin: 0 auto
+
+    &__input
+        width: 100%
+        font-size: 1.5rem
+        font-weight: 300
+        border: none
+        border-bottom: 1px solid $gray
+        background-color: transparent
+        padding: 5px 0px
+        margin: 20px auto
+        outline: none
+
+    &__input:focus
+        border-bottom: 2px solid $gray
+
+    &__input::-webkit-input-placeholder,
+    &__input::placeholder
+        font-family: 'Quicksand', sans-serif
+        font-weight: 400
+
+    &__paragraphMain
+        margin: 20px 0px 40px
+
+    &__paragraphData
+        line-height: 40px
+        text-align: center
+
+    &__icon
+        padding-right: 20px
+
+    &__link
+        color: black
+        text-decoration: none
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+            
+
+.footer
+    color: $white
+    background-color: #3D3D3D
+    padding: 50px 20px
+
+    &__secoundArticle
+        text-align: center
+        margin-top: 50px
+
+    &__box
+        margin: 20px 0px
+
+    &__paragraphMain
+        font-weight: bold
+        margin: 20px 0px
+
+    &__paragraph
+        font-size: 1.6rem
+        font-weight: 300
+        margin: 10px 10px
+
+    &__link
+        color: $white
+        text-decoration: none
+        transition: color 0.5s
+
+        &:hover
+            color: $green
+
+@import "./_mediumPompyCiepla"
+@import "./_largePompyCiepla"
