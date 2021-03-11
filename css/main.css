@@ -28,6 +28,10 @@
   color: #25c24f;
 }
 
+.spanRedColor {
+  color: #f80000;
+}
+
 .spanFontWeight {
   font-weight: 600;
 }
