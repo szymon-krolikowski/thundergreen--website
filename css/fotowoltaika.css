@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 .headingOne {
   color: #222222;
@@ -26,6 +27,10 @@
 
 .spanGreenColor {
   color: #25c24f;
+}
+
+.spanRedColor {
+  color: #f80000;
 }
 
 .spanFontWeight {
@@ -484,6 +489,162 @@ html {
   margin: 0px 20px;
 }
 
+.calculator {
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.calculator__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  margin: 30px 0px;
+  font-weight: bold;
+}
+
+.calculator__iconBox {
+  padding-right: 30px;
+}
+
+.calculator__inputRange {
+  width: 90%;
+}
+
+.calculator__paragraphTop {
+  margin: 20px 0px;
+}
+
+.calculator__paragraphMain {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 40px;
+}
+
+.container {
+  max-width: 90vw;
+  overflow: hidden;
+}
+
+.box-minmax {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  color: #222222;
+}
+
+.box-minmax span:first-child {
+  margin-left: 10px;
+}
+
+.rs-range {
+  margin-top: 29px;
+  width: 100%;
+  -webkit-appearance: none;
+}
+
+.rs-range:focus {
+  outline: none;
+}
+
+.rs-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: linear-gradient(80deg, transparent, #25c24f);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+
+.rs-range::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: none;
+  background: linear-gradient(80deg, transparent, #25c24f);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+
+.rs-range::-webkit-slider-thumb {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px solid #25c24f;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: #25c24f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+
+.rs-range::-moz-range-thumb {
+  box-shadow: none;
+  border: 0px solid #25c24f;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: #25c24f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+
+.rs-range::-moz-focus-outer {
+  border: 0;
+}
+
+.rs-label {
+  position: relative;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  display: block;
+  width: 98px;
+  height: 98px;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #25c24f;
+  margin-top: 20px;
+  margin-left: -38px;
+  left: attr(value);
+  color: #222222;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+}
+
+.rs-label::after {
+  content: "zł";
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  margin-top: -2px;
+}
+
 .footer {
   color: white;
   background-color: #3D3D3D;
@@ -620,6 +781,31 @@ html {
   .contact__button {
     width: 40vw;
   }
+  .calculator__rowBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .calculator__box {
+    width: 48%;
+  }
+  .calculator__box--reverse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: right;
+  }
+  .calculator__iconBox--reverse {
+    padding-left: 30px;
+    padding-right: 0px;
+  }
   .footer {
     color: white;
     background-color: #3D3D3D;
@@ -647,6 +833,109 @@ html {
     font-size: 1.6rem;
     font-weight: 300;
     margin: 10px 00px;
+  }
+  .box-minmax {
+    margin-top: 30px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-weight: bold;
+    color: #222222;
+  }
+  .box-minmax span:first-child {
+    margin-left: 10px;
+  }
+  .rs-range {
+    margin-top: 29px;
+    width: 600px;
+    -webkit-appearance: none;
+  }
+  .rs-range:focus {
+    outline: none;
+  }
+  ::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: linear-gradient(80deg, transparent, #25c24f);
+    border-radius: 50px;
+    border: 0px solid #010101;
+  }
+  ::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    box-shadow: none;
+    background: linear-gradient(80deg, transparent, #25c24f);
+    border-radius: 50px;
+    border: 0px solid #010101;
+  }
+  ::-webkit-slider-thumb {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: 0px solid #25c24f;
+    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: #25c24f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px;
+  }
+  ::-moz-range-thumb {
+    box-shadow: none;
+    border: 0px solid #25c24f;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+    height: 42px;
+    width: 22px;
+    border-radius: 22px;
+    background: #25c24f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -20px;
+  }
+  ::-moz-focus-outer {
+    border: 0;
+  }
+  .rs-label {
+    position: relative;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    display: block;
+    width: 98px;
+    height: 98px;
+    background: transparent;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 22px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 2px solid #25c24f;
+    margin-top: 20px;
+    margin-left: -38px;
+    left: attr(value);
+    color: #222222;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    font-size: 36px;
+  }
+  .rs-label::after {
+    content: "zł";
+    display: block;
+    font-size: 20px;
+    letter-spacing: 0.07em;
+    margin-top: -2px;
   }
 }
 
@@ -870,9 +1159,187 @@ html {
     width: 30vw;
     padding: 20px 30px;
   }
+  .calculator {
+    max-width: 1300px;
+    margin: 100px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .calculator__firstArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .calculator__secoundArticle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calculator__wrapper {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -ms-flex-line-pack: end;
+        align-content: flex-end;
+  }
+  .calculator__rowBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
   .footer__firstArticle {
     max-width: 1300px;
     margin: 0 auto;
   }
+}
+
+.box-minmax {
+  margin-top: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-weight: bold;
+  color: #222222;
+}
+
+.box-minmax span:first-child {
+  margin-left: 10px;
+}
+
+.rs-range {
+  margin-top: 29px;
+  width: 600px;
+  -webkit-appearance: none;
+}
+
+.rs-range:focus {
+  outline: none;
+}
+
+.rs-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: linear-gradient(80deg, transparent, #25c24f);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+
+.rs-range::-moz-range-track {
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  box-shadow: none;
+  background: linear-gradient(80deg, transparent, #25c24f);
+  border-radius: 50px;
+  border: 0px solid #010101;
+}
+
+.rs-range::-webkit-slider-thumb {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0px solid #25c24f;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: #25c24f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+
+.rs-range::-moz-range-thumb {
+  box-shadow: none;
+  border: 0px solid #25c24f;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25);
+  height: 42px;
+  width: 22px;
+  border-radius: 22px;
+  background: #25c24f;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -20px;
+}
+
+.rs-range::-moz-focus-outer {
+  border: 0;
+}
+
+.rs-range .rs-label {
+  position: relative;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  display: block;
+  width: 98px;
+  height: 98px;
+  background: transparent;
+  border-radius: 50%;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 22px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #25c24f;
+  margin-top: 20px;
+  margin-left: -38px;
+  left: attr(value);
+  color: #222222;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 36px;
+}
+
+.rs-range .rs-label::after {
+  content: "zł";
+  display: block;
+  font-size: 20px;
+  letter-spacing: 0.07em;
+  margin-top: -2px;
 }
 /*# sourceMappingURL=fotowoltaika.css.map */
