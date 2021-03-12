@@ -68,7 +68,7 @@
             <h2 class="headingTwo">Kalkulator <span class="spanGreenColor">zwrotu</span> inwestycji</h2>
             <p class="paragraph calculator__paragraphTop">Miesięczny rachunek za prąd</p>
             <input class="calculator__input paragraph" type="number" placeholder="Rachunek za prąd w zł">
-            <p style="opacity:0" class="paragraph spanGreenColor js-youSave">52 322zł</p>
+            <p style="opacity:0" class="paragraph spanGreenColor js-annualBill">52 322zł</p>
         </article>
 
         <article class="calculator__secoundArticle">
@@ -80,7 +80,7 @@
                     </div>
                     <div class="calculator__textBox">
                         <p class="paragraph">Wielkość instalacji</p>
-                        <p class="paragraph spanGreenColor js-installationSize">5.67kWp</p>
+                        <p class="paragraph spanGreenColor js-installationSize">2.56kWp</p>
                     </div>
                 </div>
                 <div class="calculator__box">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="calculator__textBox">
                         <p class="paragraph">W ciągu roku wyprodukujesz</p>
-                        <p class="paragraph spanGreenColor js-annualProduction">5 443 kWh</p>
+                        <p class="paragraph spanGreenColor js-annualProduction">1967 kWh</p>
                     </div>
                 </div>
             </div>
@@ -100,7 +100,7 @@
                     </div>
                     <div class="calculator__textBox">
                         <p class="paragraph">Koszt instalacji</p>
-                        <p class="paragraph spanGreenColor js-installationCost">20100 zł</p>
+                        <p class="paragraph spanGreenColor js-installationCost">7680 zł</p>
                     </div>
                 </div>
                 <div class="calculator__box">
@@ -108,7 +108,7 @@
                         <img width="74" src="image/icon-solarMoney.png" alt="Ikonka słońca">
                     </div>
                     <div class="calculator__textBox">
-                        <p class="paragraph">lub od <span class="spanGreenColor js-installationCostWithDotation">22 868zł</span></p>
+                        <p class="paragraph">lub od <span class="spanGreenColor js-installationCostWithDotation">2680zł</span></p>
                         <p class="paragraph">z dotacją <span class="spanGreenColor">"Mój prąd"</span></p>
                     </div>
                 </div>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="calculator__textBox">
                         <p class="paragraph">Roczny rachunek z fotowoltaiką</p>
-                        <p class="paragraph spanGreenColor js-annualBillWithInstallation">200 zł</p>
+                        <p class="paragraph spanGreenColor js-annualBillWithInstallation">52 zł</p>
                     </div>
                 </div>
                 <div class="calculator__box">
@@ -129,7 +129,7 @@
                     </div>
                     <div class="calculator__textBox">
                         <p class="paragraph">Oszczędności przez 25 lat</p>
-                        <p class="paragraph spanGreenColor js-annualBill">52 322zł</p>
+                        <p class="paragraph spanGreenColor js-youSave">21020zł</p>
                     </div>
                 </div>     
             </div>
@@ -254,33 +254,39 @@
                 <div class="blog__largeTextBox">
                     <h2 class="headingTwo blog__headingTwo--white"> <span class="spanGreenColor">Dołącz do nas</span> aby tworzyć lepszy świat</h2>
                     <p class="paragraph blog__paragraph">Jeśli jesteś zainteresowany naszą ofertą, mamy nadzieję, że skontaktujesz się z nami!</p>
-                    <a class="link blog__link" href="">Napisz do nas</a>
+                    <div class="blog__linkBox">
+                        <a class="blog__link link" href="#features">Napisz do nas</a>
+                    </div>
                 </div>
             </div>
         </article>
         <article class="blog__thirdSection">
             <h2 class="headingTwo blog__headingTwo">Sprawdź <span class="spanGreenColor">nasze</span> oferty</h2>
-            <div class="blog__container">
-                <div class="blog__carousel carousel">
-                    <div class="blog__slider slider">
-                        <section class="blog__slide">
-                            <img class="blog__image" src="image/stacja-ladowania-samochodow-elektrycznych-zoe.webp" alt="Stacja ładowania samochodów elektrycznych">
-                            <a class="blog__link" href=""><h3 class="headingThree blog__headingThree">Samochody elektryczne i stacje ładowania</h3>
-                            </a>
-                            <p class="paragraph">Ludzie od tysięcy lat wykorzystują siłę wiatru wraz z wynalezieniem wiatraków, a nawet łodzi żaglowych. Bez używania…</p>
-                        </section>
-                        <section  class="blog__slide">
-                            <img class="blog__image" src="image/pompa-ciepla-dom.webp" alt="Instalacja pompy ciepła">
-                            <a class="blog__link" href=""><h3 class="headingThree blog__headingThree">Pompy ciepła</h3></a>
-                            <p class="paragraph">Ludzie od tysięcy lat wykorzystują siłę wiatru wraz z wynalezieniem wiatraków, a nawet łodzi żaglowych. Bez używania…</p>
-                        </section>
-                    </div>
+            <div class="container blog__container">
+                <div class="slides blog__slides">
+                  <div class="slide blog__slide">
+                    <img class="blog__image" src="image/pompa-ciepla-dom.webp" alt="" />
+                    <p class="blog__paragraphMain">Pompy ciepła</p>
+                    <p class="paragraph">Wśród kosztów utrzymania budynków ważną rolę odgrywa ogrzewanie. Jednym z oszczędnych w eksploatacji źródeł ogrzewania są pompy ciepła...</p>
+                  </div>
+                  <div class="slide blog__slide">
+                    <img class="blog__image" src="image/fotowoltaika-instalacja-dom-jednorodzinny.webp" alt="" />
+                    <p class="blog__paragraphMain">Panele fotowoltaiczne</p>
+                    <p class="paragraph">Dobrze dobrana instalacja fotowoltaiczna to możliwość zniwelowania rachunków za energię elektryczną nawet do 95% w skali roku...</p>
+                  </div>
+                  <div class="slide blog__slide">
+                    <img class="blog__image" src="image/stacja-ladowania-samochodow-elektrycznych-zoe.webp" alt="" />
+                    <p class="blog__paragraphMain">Stacje ładowania i samochody elektryczne</p>
+                    <p class="paragraph">Dobrze dobrana instalacja fotowoltaiczna to możliwość zniwelowania rachunków za energię elektryczną nawet do 95% w skali roku...</p>
+                  </div>
                 </div>
-            </div>
-            <div class="blog__controls">
-                <button class="blog__prevButton"><i class="blog__icon material-icons">keyboard_arrow_left</i></button>
-                <button class="blog__nextButton"><i class="blog__icon material-icons">keyboard_arrow_right</i></button>
-            </div>
+                <div class="blog__slide-controls">
+                  <button class="blog__button" id="prev-btn"><img src="/svg/icon-previous.svg" alt="Ikonka strzałka lewo">
+                  </button>
+                  <button class="blog__button" id="next-btn"><img src="/svg/icon-next.svg" alt="Ikonka strzałka prawo">
+                  </button>
+                </div>
+              </div>
         </article>
     </section>
 
@@ -346,5 +352,6 @@
     <script src="js/navigation.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/calculator.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
