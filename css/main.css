@@ -122,7 +122,8 @@ html {
   top: 0;
   width: 80vw;
   height: 100vh;
-  background-color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(#85f0a1), color-stop(white), to(white));
+  background: linear-gradient(360deg, #85f0a1, white, white);
   -webkit-transform: translateX(90vw);
           transform: translateX(90vw);
   -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5);
@@ -135,7 +136,7 @@ html {
   z-index: 1000;
 }
 
-.navigationMobile__firstArticle {
+.navigationMobile__firstArticle, .navigationMobile__secoundArticle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,6 +145,10 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 10px;
+}
+
+.navigationMobile__secoundArticle {
+  margin-top: 50px;
 }
 
 .navigationMobile__button {
@@ -182,6 +187,18 @@ html {
   margin: 0 15px;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
+}
+
+.navigationMobile__paragraphContact {
+  font-weight: 400;
+  text-decoration: none;
+  color: #222222;
+  padding: 5px 15px;
+  margin: 0 15px;
+}
+
+.navigationMobile__linkContact {
+  font-weight: 600;
 }
 
 .navigationMobileActive {
@@ -311,7 +328,7 @@ html {
   font-weight: 600;
 }
 
-.header__link {
+.header__linkBox {
   margin-top: 30px;
 }
 
@@ -373,7 +390,7 @@ html {
 }
 
 .changes__contentBox.changesActiveBox .changes__answerBox {
-  height: 120px;
+  height: 100%;
   padding: 10px 0px 10px 30px;
 }
 
@@ -383,6 +400,16 @@ html {
 
 .changes__span {
   padding-right: 10px;
+}
+
+.changes__contentBoxHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .service {
@@ -732,6 +759,10 @@ html {
   text-decoration: none;
 }
 
+.blog__linkBox {
+  margin-top: 30px;
+}
+
 .blog__paragraphMain {
   margin: 10px 0px;
 }
@@ -762,7 +793,7 @@ html {
 
 .blog__slide-controls {
   position: absolute;
-  top: 97%;
+  top: 92%;
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -956,6 +987,7 @@ html {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    margin-bottom: 170px;
   }
   .header__subItemsBox {
     display: -webkit-box;
@@ -1149,6 +1181,11 @@ html {
   }
   .blog__headingTwo {
     padding-left: 20px;
+  }
+  .blog__slide {
+    min-width: 50%;
+    padding: 0px 5% 0px 0px;
+    position: relative;
   }
   .contact {
     height: 40vh;

@@ -29,17 +29,21 @@ html
     top: 0
     width: 80vw
     height: 100vh
-    background-color: white
+    background: linear-gradient(360deg, rgb(133, 240, 161), $white, $white)
     transform: translateX(90vw)
     box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5)
     margin-left: 10vw
     transition: transform 0.5s
     z-index: 1000
     
-    &__firstArticle
+    &__firstArticle,
+    &__secoundArticle
         display: flex
         flex-direction: column
         margin-top: 10px
+
+    &__secoundArticle
+        margin-top: 50px
         
     &__button
         position: fixed
@@ -65,6 +69,16 @@ html
         padding: 20px
         margin: 0 15px
         transition: color 0.5s
+
+    &__paragraphContact
+        font-weight: 400
+        text-decoration: none
+        color: $black
+        padding: 5px 15px
+        margin: 0 15px
+
+    &__linkContact
+        font-weight: 600
 
 .navigationMobileActive
     transform: translateX(10vw)
@@ -156,8 +170,10 @@ html
     &__paragraphNumber
         font-weight: 600
 
-    &__link
+    &__linkBox
         margin-top: 30px
+
+
 
 .changes
     margin: 50px 20px
@@ -201,7 +217,7 @@ html
         transition: height 0.5s, padding 0.5s
 
     &__contentBox.changesActiveBox .changes__answerBox
-        height: 120px
+        height: 100%
         padding: 10px 0px 10px 30px
 
     &__headingTwo
@@ -209,6 +225,10 @@ html
 
     &__span
         padding-right: 10px
+
+    &__contentBoxHeader
+        display: flex
+        flex-direction: row
 
 .service
     margin: 50px 20px
@@ -459,6 +479,9 @@ html
     &__link
         text-decoration: none
 
+    &__linkBox
+        margin-top: 30px
+
     &__paragraphMain
         margin: 10px 0px
 
@@ -482,7 +505,7 @@ html
 
     &__slide-controls 
         position: absolute
-        top: 97%
+        top: 92%
         left: 0
         transform: translateY(-50%)
         
