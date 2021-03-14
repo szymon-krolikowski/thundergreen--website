@@ -1,0 +1,245 @@
+@media screen and ( min-width: 1000px )
+    .navigation
+        width: 90vw
+        max-width: 1300px
+        margin: 0px auto
+        padding: 0px 0px
+
+    .header
+        width: 90vw
+        max-width: 1300px
+        display: flex
+        justify-content: center
+        align-items: center
+        align-content: center
+        margin: 0px auto
+        
+        &__firstArticle
+            width: 40%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: start
+            padding-right: 5rem
+            margin: 0px
+
+        &__secoundArticle
+            width: 60%
+            margin-top: 50px
+
+        &__paragraph
+            width: 85%
+
+    .changes
+        width: 90vw
+        max-width: 1300px
+        margin: 100px auto
+
+        &__firstArticle
+            position: relative
+            width: 50% 
+            padding-right: 0px
+
+        &__secoundArticle
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding-left: 50px
+
+        &__firstArticle::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 80%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+    .steps
+
+        &__firstArticle
+            max-width: 1250px
+            margin: 0 auto
+            display: flex
+            flex-direction: row
+            justify-content: space-between
+
+        &__stepBox
+            width: 30%
+
+            &--2
+                margin: 0px 0px
+
+        &__headingThree
+            font-size: 2.2rem
+            transition: color 0.5s
+            margin: 10px 0px
+
+        &__paragraphNumber
+            font-size: 10rem
+
+    .product
+        max-width: 1200px
+        margin: 100px auto
+
+        &__firstArticle
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+            &--risen
+                order: 5
+
+        &__secoundArticle--risen
+            order: 1
+
+        &__image
+            position: relative
+            width: 55%
+            
+        &__boxImage
+            position: relative
+            display: flex
+            justify-content: flex-end
+
+            &--secound
+                justify-content: flex-start
+
+        &__boxImage--secound::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 50%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+        &__boxImage--first::after
+            content: ""
+            position: absolute
+            top: -5%
+            right: -5%
+            width: 50%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+    .faq
+        width: 90vw
+        max-width: 1300px
+        margin: 150px auto 100px
+
+        &__firstArticle
+            position: relative
+            width: 50% 
+            padding-right: 0px
+            order: 2
+
+        &__secoundArticle
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: center
+            padding-right: 50px
+
+        &__firstArticle::after
+            content: ""
+            position: absolute
+            top: -5%
+            left: -5%
+            width: 80%
+            height: 90%
+            background-color: rgba(37, 194, 79, 0.1)
+            z-index: -1
+
+    .blog
+        width: 90vw
+        max-width: 1300px
+        margin: 0px auto 50px
+
+        &__controls
+            padding-left: 5%
+        
+        &__headingTwo
+            padding-left: 5%
+
+        &__container 
+            margin: 0 auto
+            width: 100%
+            height: 500px
+            position: relative
+            overflow: hidden
+
+        &__slides 
+            display: flex
+
+        &__slide 
+            min-width: 50%
+            padding: 0px 5% 0px 0px
+            position: relative
+
+        &__slide-controls 
+            position: absolute
+            top: 95%
+            left: 0
+            transform: translateY(-50%)
+
+    .calculator
+        max-width: 1200px
+        margin: 100px auto
+        display: flex
+        justify-content: space-between
+
+        &__firstArticle
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            align-content: center
+
+        &__secoundArticle
+            display: flex
+            flex-direction: column
+            justify-content: center
+
+        &__wrapper
+            width: 50%
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+            align-items: flex-end
+            align-content: flex-end
+
+        &__rowBox
+            display: flex
+            flex-wrap: wrap
+
+    .formContact
+        background-image: url("../image/contact-bg.webp")
+        background-position: center
+        margin: 100px auto 0px
+        
+        &__wrapper
+            display: flex
+            flex-direction: row
+            width: 90vw
+            max-width: 1300px
+            padding: 100px auto
+            margin: 0 auto
+
+        &__firstArticle
+            padding-right: 80px
+
+        &__form
+            width: 70%
+
+        
+
+    .footer
+        
+        &__firstArticle
+            max-width: 1300px
+            margin: 0 auto
