@@ -1,4 +1,10 @@
 @media screen and ( min-width: 760px )
+    .backgroundImage
+        display: block
+
+    .backgroundImageFirst
+        animation: backgroundRotate 120s linear infinite
+
     .navigation
         justify-content: space-between
         
@@ -30,6 +36,7 @@
     .changes
         display: flex
         flex-direction: row
+        overflow-x: hidden
 
         &__firstArticle
             width: 50%
