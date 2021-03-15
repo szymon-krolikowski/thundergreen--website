@@ -231,6 +231,14 @@ html
 .blog
     margin: 50px 20px 0px
 
+    &__linkBox
+        color: black
+        text-decoration: none
+
+        &:hover .blog__paragraphMain
+            color: $green
+
+
     &__firstSection
         width: 100%
 
@@ -271,6 +279,7 @@ html
 
     &__paragraphMain
         margin: 10px 0px
+        transition: color 0.5s
 
     &__container 
         margin: 0 auto

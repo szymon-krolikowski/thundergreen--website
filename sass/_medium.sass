@@ -1,4 +1,13 @@
 @media screen and ( min-width: 760px )
+    .backgroundImage
+        display: block
+
+    .backgroundImageFirst
+        animation: backgroundRotate 120s linear infinite
+    
+    .wrapper
+        overflow: hidden
+
     .navigation
         justify-content: space-between
         
@@ -24,7 +33,8 @@
     .header
         flex-direction: row
         margin-bottom: 170px
-
+        position: relative
+        
         &__subItemsBox
             display: flex
             flex-direction: row
@@ -63,7 +73,7 @@
 
         &__paragraph
             padding-right: 40px
-
+            
     .changes
         display: flex
         flex-direction: row
