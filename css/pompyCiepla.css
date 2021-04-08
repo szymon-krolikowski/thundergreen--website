@@ -21,7 +21,7 @@
 }
 
 .smallParagraph {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .spanGreenColor {
@@ -816,6 +816,11 @@ html {
   display: none;
 }
 
+.offer__headingTwo {
+  padding-left: 20px;
+  padding-bottom: 40px;
+}
+
 .offer__largeCircle {
   position: absolute;
   top: -40%;
@@ -936,7 +941,7 @@ html {
 
 @media screen and (min-width: 760px) {
   .backgroundImage {
-    display: block;
+    display: none;
   }
   .backgroundImageFirst {
     -webkit-animation: backgroundRotate 120s linear infinite;
@@ -1120,6 +1125,10 @@ html {
     margin-right: 2.5%;
     margin-left: 2.5%;
   }
+  .offer__headingTwo {
+    padding-left: 0px;
+    padding-bottom: 0px;
+  }
   .footer {
     color: white;
     background-color: #3D3D3D;
@@ -1151,6 +1160,9 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
+  .backgroundImage {
+    display: block;
+  }
   .navigation {
     width: 90vw;
     max-width: 1300px;

@@ -21,7 +21,7 @@
 }
 
 .smallParagraph {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .spanGreenColor {
@@ -778,7 +778,7 @@ html {
     overflow-x: hidden;
   }
   .backgroundImage {
-    display: block;
+    display: none;
   }
   .backgroundImageFirst {
     -webkit-animation: backgroundRotate 120s linear infinite;
@@ -986,6 +986,9 @@ html {
 }
 
 @media screen and (min-width: 1000px) {
+  .backgroundImage {
+    display: block;
+  }
   .navigation {
     width: 90vw;
     max-width: 1300px;
