@@ -1460,6 +1460,9 @@ html {
     margin: 0px auto;
     padding: 0px 0px;
   }
+  .navigation__firstArticle {
+    padding-top: 10px;
+  }
   .header {
     width: 90vw;
     max-width: 1300px;
