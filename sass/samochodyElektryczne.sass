@@ -43,10 +43,14 @@ html
     transition: transform 0.5s
     z-index: 1000
     
-    &__firstArticle
+    &__firstArticle,
+    &__secoundArticle
         display: flex
         flex-direction: column
         margin-top: 10px
+
+    &__secoundArticle
+        margin-top: 50px
         
     &__button
         position: fixed
@@ -72,6 +76,16 @@ html
         padding: 20px
         margin: 0 15px
         transition: color 0.5s
+
+    &__paragraphContact
+        font-weight: 400
+        text-decoration: none
+        color: $black
+        padding: 5px 15px
+        margin: 0 15px
+
+    &__linkContact
+        font-weight: 600
 
 .navigationMobileActive
     transform: translateX(10vw)

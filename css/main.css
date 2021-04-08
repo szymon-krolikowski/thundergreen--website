@@ -327,8 +327,7 @@ html {
   top: 0;
   width: 80vw;
   height: 100vh;
-  background: -webkit-gradient(linear, left bottom, left top, from(#85f0a1), color-stop(white), to(white));
-  background: linear-gradient(360deg, #85f0a1, white, white);
+  background-color: white;
   -webkit-transform: translateX(90vw);
           transform: translateX(90vw);
   -webkit-box-shadow: -1px 9px 18px 0px rgba(75, 81, 91, 0.5);
