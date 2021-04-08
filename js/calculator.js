@@ -9,12 +9,12 @@ let spanYouSave = document.querySelector(".js-youSave");
 
 inputRange.addEventListener("input", () => {
     let valueRangeInput = inputRange.value;
-    let annualProduction = ((valueRangeInput / 0.61) * 12).toFixed(0);
-    let installationSize = ((annualProduction / 1000) * 1.3).toFixed(2);
-    let installationCost = (installationSize * 3000).toFixed(0);
+    let annualProduction = ((valueRangeInput / 0.601) * 12).toFixed(0);
+    let installationSize = ((annualProduction / 1000) * 1.0014).toFixed(2);
+    let installationCost = (installationSize * 3250).toFixed(0);
     let installationCostWithDotation = installationCost - 5000;
     let annualBill = valueRangeInput * 12;
-    let annualBillWithInstallation = (valueRangeInput * 0.52).toFixed(2);
+    let annualBillWithInstallation = (valueRangeInput * 0.1).toFixed(2);
     let youSave = (annualBill * 25) - installationCost - (annualBillWithInstallation * 25);
 
     spanInstallationSize.innerText = installationSize + " kWp";
