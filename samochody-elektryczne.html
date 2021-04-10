@@ -217,11 +217,11 @@
                 </div>
             </article>
             <article class="formContact__secoundArticle">
-                <form class="formContact__form" action="">
-                    <input class="formContact__input" type="text" placeholder="Imie i nazwisko">
-                    <input class="formContact__input" type="email" placeholder="E-mail">
-                    <textarea class="formContact__input" cols="30" rows="7" placeholder="Wiadomość"></textarea>
-                    <button class="formContact__button link">Wyślij</button>
+                <form class="formContact__form" action="mail.php" method="POST">
+                    <input class="formContact__input" id="formContact__inputName" type="text" minlength="2" placeholder="Imie i nazwisko">
+                    <input class="formContact__input" id="formContact__inputEmail" type="email" placeholder="E-mail">
+                    <textarea class="formContact__input" id="formContact__message" minlength="5" cols="30" rows="7" placeholder="Wiadomość"></textarea>
+                    <button type="submit" class="formContact__button link" id="formContact__buttonSubmit">Wyślij</button>
                 </form>
             </article>
         </div>
