@@ -1,6 +1,7 @@
 # Website Green Volt
 
-My first commercial project for "Green Volt". Publication scheduled for 01.05.2021 on https://greenvolt.pl
+My first commercial project for "Green Volt". <br>
+Publication scheduled for 01.05.2021 on https://greenvolt.pl
 
 ## Demo
 
