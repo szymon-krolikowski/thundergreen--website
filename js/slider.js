@@ -1,72 +1,54 @@
-const slideContainer = document.querySelector('.container');
-const slide = document.querySelector('.slides');
-const nextBtn = document.getElementById('next-btn');
-const prevBtn = document.getElementById('prev-btn');
-const interval = 5000;
+let buttonNext = document.querySelector("#next-btn");
+let slider = document.querySelector(".blog__slider");
+let buttonPrev = document.querySelector("#prev-btn");
+let flag = true;
+let i = 1;
+let percent = 100;
+let margin = 80;
+let move
 
-let slides = document.querySelectorAll('.slide');
-let index = 1;
-let slideId;
-
-const firstClone = slides[0].cloneNode(true);
-const lastClone = slides[slides.length - 1].cloneNode(true);
-
-firstClone.id = 'first-clone';
-lastClone.id = 'last-clone';
-
-slide.append(firstClone);
-slide.prepend(lastClone);
-
-const slideWidth = slides[index].clientWidth;
-
-slide.style.transform = `translateX(${-slideWidth * index}px)`;
-
-console.log(slides);
-
-const startSlide = () => {
-  slideId = setInterval(() => {
-    moveToNextSlide();
-  }, interval);
+const flagCheck = () => {
+  if(i === 2) {
+    flag = false; 
+  } else if(i === 0) {
+    flag = true;
+  };
 };
 
-const getSlides = () => document.querySelectorAll('.slide');
-
-slide.addEventListener('transitionend', () => {
-  slides = getSlides();
-  if (slides[index].id === firstClone.id) {
-    slide.style.transition = 'none';
-    index = 1;
-    slide.style.transform = `translateX(${-slideWidth * index}px)`;
-  }
-
-  if (slides[index].id === lastClone.id) {
-    slide.style.transition = 'none';
-    index = slides.length - 2;
-    slide.style.transform = `translateX(${-slideWidth * index}px)`;
-  }
+buttonNext.addEventListener("click", () => {
+  flagCheck();
+  if(flag == true) {
+    move = `calc(-${percent}% - ${margin}px)`;
+    slider.style.left = move;
+    slider.style.transition = "2s";
+    percent = percent + 100;
+    margin = margin + 80;
+    i++;
+  } else {
+    move = `calc(-${percent}% - ${margin}px)`;
+    slider.style.left = move;
+    slider.style.transition = "2s";
+    percent = percent - 100;
+    margin = margin - 80;
+    i--;
+  };
 });
 
-const moveToNextSlide = () => {
-  slides = getSlides();
-  if (index >= slides.length - 1) return;
-  index++;
-  slide.style.transition = '.7s ease-out';
-  slide.style.transform = `translateX(${-slideWidth * index}px)`;
-};
-
-const moveToPreviousSlide = () => {
-  if (index <= 0) return;
-  index--;
-  slide.style.transition = '.7s ease-out';
-  slide.style.transform = `translateX(${-slideWidth * index}px)`;
-};
-
-slideContainer.addEventListener('mouseenter', () => {
-  clearInterval(slideId);
+buttonPrev.addEventListener("click", () => {
+  flagCheck();
+  if(flag == true) {
+    move = `calc(-${percent}% - ${margin}px)`;
+    slider.style.left = move;
+    slider.style.transition = "2s";
+    percent = percent - 100;
+    margin = margin - 80;
+    i++;
+  } else {
+    move = `calc(-${percent}% - ${margin}px)`;
+    slider.style.left = move;
+    slider.style.transition = "2s";
+    percent = percent + 100;
+    margin = margin + 80;
+    i--;
+  };
 });
-
-slideContainer.addEventListener('mouseleave', startSlide);
-nextBtn.addEventListener('click', moveToNextSlide);
-prevBtn.addEventListener('click', moveToPreviousSlide);
-
-startSlide();
